@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <style>
+        body {
+            background-image: url('https://www.mastek.com/sites/default/files/images/Home/hero/home-mastek-difference-hero.jpg');
+            background-repeat: no-repeat;
+        }
+
+        a {
+            color: rgb(222, 217, 238);
+        }
+
+        .menu {
+            float: right;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .Text {
+            float: left;
+            font-size: large;
+        }
+
+        .nav-container {
+            height: 50px;
+            color: rgb(2, 27, 8);
+        }
+
+        .presence {
+            width: 49%;
+            float: right;
+        }
+
+        .service {
+            width: 49%;
+            float: left;
+        }
+
+        footer {
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+        }
+
+        .check {
+            border: solid 1px;
+        }
+    </style>
+</head>
+<body>
+    <header class="nav-container">
+        <div class="logo">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbgAAAByCAMAAAAWEDTnAAAAyVBMVEX///8AFokAmaiYmJoAAIUAAIIAE4gAAIAAEYh7gLcADYcAEIgAAIg2Qpzp6vPt7/j29/yFibuus9UAB4YqNpURJpIAk6Nrc7P5+v1QWqZBTKCepMzBxd+RkZOsrs2zt9Vja6/P0ubZ3OxJU6LX2uuZnsimq9CNk8IjMJPJ5ulkbK1YYKji5PFzerUcK5K8wNyUmsY6Rp0HIJCzs7XFxcagoKLh4eLZ2dmj1NkqpbKSzNM9q7dYtL7v+fqz2+Dl9PZ8w8y7u7yqqqw7MAaYAAATTklEQVR4nO1dCZfathYeEsk2NovBkDFLwxgYhrIPTSZN26Rp/v+PerZh7HulK9lmmDC84++819MmXmR90t2vuLkp8fr48+u7d1//uvQoShTF3x/ehfjw9fdLD6REIfwT8xZRV266a8Jfz7yFzP3z7dKjKZEXv6e8hcy9K8XlleDbOwGluLwO/C0SV4rLq8BfH0TiQpTi8s3jd4q30rp885AUXCkurwOSgivF5VWAVHDPm+77pUdXQgVawSXM/Xvp8ZWgoVJwz8T9uPQAS9DQKLgYf196gCVI6BRcjK+XHmEJCt+yeCt33NvE9yziPvx56SGWoPBnKSnfCJrTIChwedaOK72B14Y73X5sLetdi/FKgdv+1RNXCspXxo6bJufMsy2j4nSL3PlDx1zpxL02qqySwCpE3Le/NcydS8G5TQG57vJPuuu6cDpxN756z51LwTVCaYDR9bPvaop3mZPzDOctARG3L3jzdxVv5wowT82KAD7MvmvHhZvs+pnG84bwIuJu/iXF5fkU3FCkoMJus+/aOMJNBUXJVeBlxNEmytcc4ixGMxgGY90FbYk4q5KpsGS2jVrOAV0RXkoc4c/lVXDbvsdCg3b/oKZiIHFQ4aOs594x+abcn3M1QMQV8eMSiOIyp4Ib903biN/K2Ux10U7mwFtmPLhxeCyCWeSDrgMvJ04Ql/kUnN9iXirJzJbisgeZuArPkJXELq2YbrEvOjv88fDMQ0DEGSc+5Pu7lLpcHtxwztG2MBV7rkoRd69/dt0miFsV/aTzwHdX29nurlMzuZnDHC4CODXGqcRBcZlDwTWXpjC5BqNn9s6rSHDm2ocHkgcRETc95atejOaeR2EpFgnvPH5MESDirNOf8+NDRF2u1oGZJ+8j1iMv7RO7p8K1LNwSm7TCi4TPz4dGLZUrfHveZyPinBc86Pd/Qtp+ZO+38YRb1NSSxuKcupSpNGIEn9Bw51/uOfHLiLPP+2wKLU5IvxBWjVLehIEYyUqNnzijiTvzrOXELyPOO++zZQw35LzG+4gKiVBiT79/KNMkj/P3Kvh/Ia654GIwKoMOYGgYqdRka+UrpunnwFfxwSt+lhqIuDOvHUQcO++zBcwcegMdYXckCdhIiTPmnYQ5w1P6ROvkFXZ/k84ae3jVL1PhlxH3miG9cZ00SuC2kIyOcUqc3Us5qfC24iXuPnkHm3UBcdVX/DI1/g+Ic1ucVD6YOTHgHKQa0e6BgLOnyq+l1zid1R4Qt3i1L9MBEadabCfi14jK7VxplABIabMt4Kq3AiM1FWGvSWKysirYfeHdmsE1p8PtaLQdBoUS5VFIpLWutnaz0VRl5TavXMc173Jst/jjBBsCbrLlTSc1NxRhr1UqWnngd1Pi7L56dO0kX27y+eJ+miOm2JgtanFIJEJ032MLhiL9weyAHXB92O0gwb3GwmwGg9aiX6/3l9XdVrOUsohzMfJm2iBmTGuUABisge78mBLH7mC6xu6Qb2olV1j7G38DiNOkwEdAGFghDfOWNkUYWq4LjzPsYNqM71P7x31eCui7GSilUGU4VvcTL46RhfDCNVGb3KuirBnEDTYdiPlBuQST5V1v3ZiEBrw72ek/s9HnlBdNI6QHAmR1QjcPzjAjw17pdEbWCAi7ODTRMUaCFHcYu2uoL3dvGaM+iD2ml1DhUs1nPmPYY9xDzzZszpb0OtITN+K2A2AfQ9zN9gNrD8dmONaPpl7vj4282y0GdlPB4EImGpA4ykwEFJjBDRSt1kYtKkTionkwlX7fUCU+gDQ+jbigbnrEiggHc0tJby1xAV5bDkt85CA0QKf92uqmM9ES16zk027PsCw4SCAcI09snjLhzImP6SUqJU5QQeL2am0hExeCK0pbZqbKp3khce5aEQuMLq8QsQkdcSsHBTqcWhpjj4mrVwer/UweBMCi0H6rCFGRSco6u8dpVSLOsgKSMnIJQfTLqKiFH0lchZNqqK0W+y8jbqw1ux0mSwANce4GrQGLgdxITNwm6LfuB9Ig4FxmfYIMmIEBU89nONVGhDYBr/FDQE7I8NSZVJo4IhwQ+ZVqdf0i4oZML5iIGgE1cX4f7RYH2QMxcfubvenuxEEo5jIvYOQL2IWxGwTcIkPKJvipJHXiZ/SgMa7O4SmIM4i0X1eYXstykhG+hLhRVlApVNqiDagmboE+yHbQdwTdSFTePCxv7tURX1WsXg+eDhG40LFohElSKRIBqvIOGbslJE6dSR2ZB39MTCExSVjeoxkJ7fb9fL5n5sE3eAFxQ7yRrYPjwDCZYnZBSVwL82YI68+N/++H/9O5dpSZlIW0jME1QOAhIg6WWUo+NeDpsL8QzWritv31w26wW/drnCGdLu5SvwKm0uDLYeTV+v6qfRtZ8Yg47wC0bB0vAb+Dz11BigzGN632cDhst/bIXHEMrKZVxOFaKVtRE5IF0uPJQhKJbHgCcQ34PBN/SBMEpB+lT8uVAh/vULpQdDmgTDUYimCNejUOiKtPDugDRpx6L8EEaiy/Dvix2Tp124Ie3IqCBFAQN0K73dMYZVrsM2U3heear7G0ZSZQ+uGwF3TWD3/zoBOsNHwoZxzB+YMWsmTmrapE4NvNE6t8gO5pB0uGGdyMuE6MJi5AAtbbnFrdRhQV54BlN4+jADMfL0SoZYQwFmgY4Ifh3sPb82ZSoaTBtWE+dC+IIg/CscyTHQBOTIX1xYcMwd/aqLwNE3dcYisbCnuve+J+U1psWTja+gFcizEZcA9iHQQzQMfg00d4e+5MKkz7IbZhhbQuaA1vyUHcMn2f9yjbC1Ctoy1HEec6UKuyzQv6AveaWgUNDioJdm+wwyCgmYrIAJbIs1AaZYXISKxSxYqr3WFa6XzEAU+XdjaBzYXGQxDnP6J13XlJP+eJW+6QPwOr7VmKw2YCGyzQZqpNEw9vC4nL0Z11RKpHcWIZEmfUcqVJchAHNziZqwJVAIYDRB9B3BLxVn9ZH+7yJC13aBAASuqZuDE0mkDGHHCcBM3Qhs2fAgc2jQnpWdWgiaer7UyQTZwLFxz9EBg+AgaOTNwamcT1F/YqrE7yCA7uZppeS/tRYNMikJVAoCQuG1SRmT0+KcBGRdaJO0d1Y+scCzqbOPAylRoGlaJQbmDiQpZ2cE0zQl0WxP1JwjIKTUK9ZW2Ix6Xp1CbIsdafhwx3p7JKJUFzNQ3as93DbgHWAIpWLFHollV2mTZbNnFAUqr6G2DFFKAD9cOExG3RfpucoTeoc0LY60AcaPlIbH+YlEubcGbUwoURblu3Asejaq+zrx0CTaD9S/C9BH1tcWuR4dZnEuemqSd1V2kteYZRS9cKJs4f14ADx3sv3m8hpqdsuXjKQJQ43TEwdJzY66keAH0/MGTodBRL0G0vatE5L45FiHSOu7+6golsMO61dO0kmcSBZWjMWwrswYBSuxMT15hDczu/XtCidQJz8V4CeZk0LDsjfHBQOAtlIiDO6pIqabhgYvkIhKB2tnLw2GLmfKcMT2QSh6NoCoDXAdmNWwcn4L+0JW1F4M4LC8uYERiqSP0wGMB87k4F4Q4o3WABu0MQN6rrWKvItuMttQQtXrtTqKdM4oqmvYAIwMTBGVZKl8LYFt5y8QBdkI4Da78nK6FHYDGD90L7vSZZEkEns2hQctv75ESHIpMuL8okjuq41c7LIM+t7Gzn8RQNWR4qphoVEMVLRwyDQAcJCmsWYHYQpmG4OLNVsSuWGoeYa/QnijXIyGBoJnFLZZ2J4jVprlLHOT9XxX2zmDPn7eNZhh4vkBHwYc4mkgpA7ZnQVoBtkUIXuNsjGRBzqXK8papoODLMO9mSyySO7LjVIN+OO2O9O91uqHpr5zDJMMYER4JkZURUum5xoSwMbAqZ1Inw2ZbHo2MEayz8Z/qnVKBsW1HUGbC+3G2URVzRCgGwLrXEGZpSjWKY5JYJntk6TsAYsA1dYRQ8bqHpweE+xDD2pfFCYny/HAwPy8VfpX4THeG8r9DKkUmR53MTZ3dTs0OvHp3amU4MRIE+DSz+mMg0GGuEG8aHOaoJJNKoIYF4p9iyNzOcJo6qEMDfpkNVhKbdWV+ocji+QwxaFRKVhp0FpopVHh8A/0NeRSfiIZewZBWg4+HOMmEdNkpFN0FkzFNn96Hx4FpQ2PG+IFZQ3bsC01bXZKLIFFsfsokDsSFj81jXo7+G4l4kzqjtEXNcV8RVBJtsqeCYC/jlKBkN/wK6F+F8AEmJK6GglwTsMXwsorRNgPunTQZNhWqeiuz3ZRIHwugFwuAxBOIMHgheF1cetFUM5MEx6NWsi0N/cN5RggV2vrF1mgSwKtg8gLULYE59ZLTIMfmcxIXY9rC2E8+DyCQOhMzlQlE9BOKix1cF5s50RkiGs+mxlmCVteC8o78BMXVjn14m+ssDwYo5AtY/EP1XjfzERWdb4VYq3FnToB0acLvC/soBPJ2H9VfHpefeySUnCE0xRgthSJoGDU0ozoHfCwv2hEdAJwT40jP9bIE0Xo68uduHkyU8LpM4eIH9SFygBg4yH5bsykRqzqufI0mgLWNg1MmHwAZxNuhvcE4z+XKxCQ7GWIAKgTuZy582KkTcTRPGThkuFIe8MLIwAXosZqEtRx40KkwxP1Pru6qMweYLSr73iHTcEWvqSVLUCWprUN4DBS1x0ONtHquSvl60ThBxtE8I22HpDIYC9Cnoa4G5jK7TnGjSzS58Ti81YEOICeyA2LySMY4kKtiOYCdTR/KA4ghF5yiGpgqwCSr6rA11M6rsYJMCoo0mzu9gQ/dMBgp1BqhnPtDDhT3cUq2PJYed5HqgAC3n5I/hdpWPbxjS8lUNVHeL5WETVnLTJ0XgyqzH/HtO8bsDQo2PdWLvgIi+GPmyeF/VKu8D5SHlV1qyrJQXF6xdAOX1yC+XCsPhEPFG99fkJKDAGh4DcjzowjB8QD+zc+s51Q9GtLHb5c3PEvsaC9EGVlF7ib5ad1A/SHBIFCA0Ud1T8sfQP5QqW1GEB6tWl7GqvMpgnbwQcsNpGwO2eo2Sf8eK3+LLnEdrKn/pQziw80x1DG1osFp8oVkOsGRELl3biLKSWNAuKixKBDI63l6w0rEPi3v+XcNirDfCgj2Ah71JXiGy2R3v6IO7o3paTd4QUl6M1Qd5xJuSOHcuqLnzJOdGSbWAxfdazQkFnVzkKyX9pfOkcLMMCJqh4ofQ8EqY8MUDkPAOitr1DI/z/mAYH/jiu+5wgZr5JSMOR6EM7lTv71t1k9tApkpeks1Nb3HfDlaNZmM8VGkS9W/rjIWAvurA64Jo3NXiI3n4PsNUhaaF7L2Ohc+ljqxxHdo776ElyTu7YLVajbfVjZQkRQ71c59l9GsJ+/pk8rgRjqAxmChAVkJnpxW3vlawMlzLJpsRH1gUQ7VfND+KJGQ/DU07biGsZuvFbSvzOPeMcNAjDlpTgQl4KBRMDAlr3Ga85oT/IDI1qHYBNshaUZpFlNZEv79kjT1fCoUNnY0/jkBV6677NSuhVMQ+vd3qFMC4B9EJjH/5KC7CFuGDk04Q91KNrmGQHmY4I+CxruKiZI6Jc6dU0SJsfmqYO4k4X0jFUCN7PcANb8qSfoyUOh2XgLsSGv76TAX8aJTG0xNn7ymbQtFnJvgNt8pzOE4i7mYqWDy46fyVMYDuFrHXUdqfjhAgFwvK0p2GOTYBpcMwHKMnju1JM2JIv0kc70xVKngacVKoI+tXNs4JaDfKVZF4bI58LHCEOxVxNy1TucT3Liwo8NLqUh1xFle1o9F13NJCG9fp8rETiRPjwsYvPAcexoKpOuSG1s8THyEG7geMNhsiAtCPn/GkoNtV3BLRZqhXdJWqCiMkRHtO7bpTifMreB1YtYzDHI+3PT1pzz/Jg6UNBkYt50fQ6ZF9NKAYNZv2iVPPGK9Gwwal5gyEjAZ9TtxjRGdV6uJK7ZpcVkqJdr/dF0+lOZ24m0A8UlOOLMkj+OO3EO8/f/75x3+fPn15ejqplr1vG8+wyWr4WfpTqAqrqcqSRxhyDHo7MbmXNOkYUWnl4rgAHkwWvd1i5hJRshr0uBn9hrNjhXDs0KUza7fbjO9rtEJfw7YO47Cc6CbFgTnT1t6MLz2OybCoI8WO32YlsKkWrXtuICh+BQfi82/vE/x24PBL5k0SOl5Sl1Yju9v8jwkUMaIWA7VtxLgbs2XXOx7AZHeX7ZSAxkOnYhvdW2J+g9HD8nG+6XY388flwyifBNpW610j9vy6nUn1o8YjXo3W9a596NOpGZtHVU3yg9FNsCdr8e4AtdEyU4ilFJ8Abwl/xZlrNlKcGOF2V+kjVopnrIJguB0GgWT+uKe+VYXwg5rNfMKnMQ5CTFVjzvtCjMxXf5Z5C5k7T/lDiVcEseFO2nIlfi18mrhPlx5XiQy45Y67TjzRxD1delwlMlASd6X4QhN36R90LpEFyo0r3YErgIK4Sw+rRBb+o3h7//7SwyqRhZ8kb58vPawSWaCJ+3npYZXIAhmqfP/fpYdVIgM+HWMuI15vHT654Uri3j7oHVeGKt88SD+ujHhdAX4SzJXewDXg089Dqclv5Ya7Ovju09OXL5/+++NnpPJ+nsDb/wBjd2ouLlBujQAAAABJRU5ErkJggg=="
+                 alt="Mastek Logo" width="200px" height="50px">
+        </div>
+        <div class="Text" style="color: rgb(241, 8, 8); size: 200px;">
+            Welcome to Mastek .
+            Stay home and stay Safe
+        </div>
+
+        <h3>
+            MASTEK is an Indian multinational technology company that provides enterprise-level
+            digital transformation services and software to large public and private enterprises
+            in the UK, US and India Maztec has more than
+            2,200 employees in 11 offices operating in the UK, US and India
+        </h3>
+
+        <h4>
+            <a asp-action="RegistrationForm" asp-controller="Assignment">
+                Register
+            </a>
+        </h4>
+
+
+
+        <footer class="nav-container">
+            &copy; Thank You
+        </footer>
+
+</body>
+</html>
+
+
